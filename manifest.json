@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Configurable Proxy Extension",
+  "version": "1.0",
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "tabs",
+    "webRequestAuthProvider"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Configurable Proxy Extension"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
